@@ -14,11 +14,11 @@
 }
 /*paleta e fontes*/
 :root{
-    --cor01: #BFDBF7;
-    --cor02: #84DCC6;     
-    --cor03: #368F8B;
-    --cor04: #33A1FD;  
-    --cor05: #1D4E89;
+    --cor01: #FFBB8E;
+    --cor02: #FFAD6E;     
+    --cor03: #FF9949;
+    --cor04: #FF8823;  
+    --cor05: #FF7600;
     
 
     --fonte-padrão: 'arial', helvetica, sans-serif;
@@ -40,7 +40,9 @@ header{
 header>h1{
     font-family: var(--fonte-destaque);
     color: white;
-    padding-bottom: 10px;    
+    padding-bottom: 10px;
+    font-weight: normal; 
+    
 }
 header>p{
     color: white;
@@ -88,9 +90,9 @@ main h1{
 main h2{
     font-family: var(--fonte-conteudo);
     text-indent: 8px;
-    color: var(--cor03);
+    color: var(--cor04);
     font-size: 1.3em;
-    background-image: linear-gradient(to left, lightcyan, lightblue);
+    background-image: linear-gradient(to left, white, var(--cor01));
 }
 main p{
     text-align: justify;    
@@ -106,6 +108,19 @@ main img#small{
     display: block;
     margin: auto;
 }
+div.video{
+    position: relative;
+    background-color: var(--cor05);
+    margin: 0px -20px 30px -20px;    
+}
+div.video > iframe{
+    display: block;
+    margin: auto;
+    width: 75%;
+    height: 300px;
+    padding: 5px;
+}
+
 main strong{
     color: var(--cor05);
 }
